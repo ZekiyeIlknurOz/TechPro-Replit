@@ -1,14 +1,13 @@
 package eng_3_if_switch_ternary_stringmethod;
 
 public class C07 {
-
+    // Create 2 words : name1 and name2
+    //if the name1 has even numbers of characters, then insert the second word in the middle of the first name
+    //if the first word has odd numbers Then print the “Name2 cannot be inserted in the name1”
+    //name1= mehmet
+    //name2= ahmet
+    //Print ==> mehahmetmet
     public static void main(String[] args) {
-        // Create 2 words : name1 and name2
-        //if the name1 has even numbers of characters, then insert the second word in the middle of the first name
-        //if the first word has odd numbers Then print the “Name2 cannot be inserted in the name1”
-        //name1= mehmet
-        //name2= ahmet
-        //Print ==> mehahmetmet
         String name1 = "mehmet";
         String name2 = "ahmet";
         int name1Len = name1.length();
@@ -22,6 +21,5 @@ public class C07 {
         }else{
             System.out.print("Name2 cannot be inserted in the name1");
         }
-
     }
 }

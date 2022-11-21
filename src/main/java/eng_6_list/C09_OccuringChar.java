@@ -41,5 +41,6 @@ public class C09_OccuringChar {
                 System.out.print(common.get(i) + " ");
             }
         }
+        input.close();
     }
 }

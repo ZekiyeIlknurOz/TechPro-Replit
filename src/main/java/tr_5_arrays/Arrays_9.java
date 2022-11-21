@@ -8,14 +8,16 @@ public class Arrays_9 {
         //Beklenen Çıktı:
         //Tek Sayilar: 5
         //Cift Sayilar: 4
-        int sayi[] = {1,2,3,4,5,6,7,8,9};
-        int cift = 0;
-        for(int i = 0;i<sayi.length;i++){
-            if(sayi[i]%2==0){
+        int sayi[] = {1, 2, 3, 4, 5, 6, 7, 8, 9};
+        int cift = 0, tek = 0;
+        for (int w : sayi) {
+            if (w % 2 == 0) {
                 cift++;
+            } else {
+                tek++;
             }
         }
-        System.out.println("Tek Sayilar: " + (sayi.length-cift));
+        System.out.println("Tek Sayilar: " + tek);
         System.out.println("Cift Sayilar: " + cift);
 
     }

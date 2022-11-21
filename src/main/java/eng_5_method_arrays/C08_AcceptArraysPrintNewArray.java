@@ -3,11 +3,10 @@ package eng_5_method_arrays;
 import java.util.Arrays;
 
 public class C08_AcceptArraysPrintNewArray {
-
+    //  Write a return method that accepts 2 integer Arrays as parameters And
+    //  adds 2 array into a new Array and prints it.
+    //Input1={1,2,3,4}      Input2={5,6}        Output={1,2,3,4,5,6}
     public static void main(String[] args) {
-        //  Write a return method that accepts 2 integer Arrays as parameters And
-        //  adds 2 array into a new Array and prints it.
-        //Input1={1,2,3,4}      Input2={5,6}        Output={1,2,3,4,5,6}
         int input1[] = {1, 2, 3, 4};
         int input2[] = {5, 6};
         int arr[] = newArray(input1, input2);

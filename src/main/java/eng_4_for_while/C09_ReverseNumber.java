@@ -5,10 +5,9 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class C09_ReverseNumber {
-
+    //  Write a java program to reverse the number which user entered.
+    //  Input  :1238 -- Output :Reverse Of The Number: 8321
     public static void main(String[] args) {
-        //  Write a java program to reverse the number which user entered.
-        //  Input  :1238 -- Output :Reverse Of The Number: 8321
         Scanner input = new Scanner(System.in);
         System.out.print("Sayi: ");
         int number = input.nextInt();
@@ -26,7 +25,6 @@ public class C09_ReverseNumber {
         }
         System.out.println(s);
         // 2.yol
-        input = new Scanner(System.in);
         System.out.print("Sayi: ");
         String str = input.next();
         String arr[] = str.split("");
@@ -34,6 +32,6 @@ public class C09_ReverseNumber {
         for (String w : arr){
             System.out.print(w);
         }
-
+        input.close();
     }
 }

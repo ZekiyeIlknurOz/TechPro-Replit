@@ -15,15 +15,19 @@ In the method, ask the user to enter a new last name and change the old last nam
      */
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        Students std = new Students("Hakan","Coskun");
-        System.out.println(std.name + " "  + std.surname);
+        Students std = new Students("Hakan", "Coskun");
+        std.reName();
 
-        std.changeName("Kemal");
+        System.out.print("Enter a new name: ");
+        String name = input.next();
+        std.changeName(name);
         std.reName();
 
         System.out.print("Enter a new last name: ");
         String surname = input.next();
         std.changesurname(surname);
         std.reName();
+
+        input.close();
     }
 }

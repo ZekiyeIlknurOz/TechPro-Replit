@@ -1,11 +1,11 @@
 package tr_2_scanner;
 import java.util.Scanner;
 public class Scanner_8 {
+    //  Kullanıcıdan üç basamaklı bir sayı girmesini ve bu sayının basamaklarının
+    //  toplamını bulmasını isteyin.
+    //   Örnek Çıktı:
+    //   Verilen tamsayının rakamları toplamı 10'dur.
     public static void main(String[] args) {
-        //  Kullanıcıdan üç basamaklı bir sayı girmesini ve bu sayının basamaklarının
-        //  toplamını bulmasını isteyin.
-        //   Örnek Çıktı:
-        //   Verilen tamsayının rakamları toplamı 10'dur.
         Scanner input = new Scanner(System.in);
         System.out.print("3 basamakli sayi giriniz: ");
         int sayi = input.nextInt();
@@ -44,4 +44,19 @@ public class Scanner_8 {
         } while (sayiBasamakliMi);
         return counter;
     }
+
+    /*
+    public static void main(String[] args) {
+    Scanner input = new Scanner(System.in);
+    System.out.print("3 basamakli sayi giriniz: ");
+    int sayi = input.nextInt();
+    int digitSum = 0;
+    do{
+        digitSum += sayi%10;
+        sayi/=10;
+    }while(sayi>0);
+    System.out.println("Verilen tamsayinin rakamlari toplami " + digitSum + "\'dur.");
+    input.close();
+   }
+     */
 }

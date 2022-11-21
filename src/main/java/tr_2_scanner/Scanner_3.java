@@ -3,20 +3,23 @@ package tr_2_scanner;
 import java.util.Scanner;
 
 public class Scanner_3 {
-
+    //  Kullanıcıdan dikdörtgenin kenar uzunluklarını alın ve dikdörtgenin
+    //  alanını ve çevresini konsola yazdıran bir program yazın.
+    //Örnek Çıktı:
+    //Alan: 32
+    //Çevre: 24
     public static void main(String[] args) {
-        //  Kullanıcıdan dikdörtgenin kenar uzunluklarını alın ve dikdörtgenin
-        //  alanını ve çevresini konsola yazdıran bir program yazın.
-        //Örnek Çıktı:
-        //Alan: 32
-        //Çevre: 24
         Scanner input = new Scanner(System.in);
-        System.out.print("Kenar: ");
+        System.out.print("1. Kenar: ");
         int sayi1 = input.nextInt();        // 4
-        System.out.print("Kenar: ");
+        System.out.print("2. Kenar: ");
         int sayi2 = input.nextInt();        // 8
-        System.out.println("Alan: " + sayi1*sayi2);
-        System.out.println("Cevre: " + 2*(sayi1+sayi2));
+        alan(sayi1, sayi2);
+        System.out.println("Cevre: " + 2 * (sayi1 + sayi2));
+        input.close();
+    }
 
+    private static void alan(int a, int b) {
+        System.out.println("Alan: " + a * b);
     }
 }

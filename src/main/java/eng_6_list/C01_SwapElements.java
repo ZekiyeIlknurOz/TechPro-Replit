@@ -12,10 +12,9 @@ public class C01_SwapElements {
         //Output:   [Umit,Emin,Furkan,Kerem,Taylan,Orhan,Sinan,Kemal,Ahmet,Ali]
 
         String[] names={"Umit","Emin","Kemal","Kerem","Taylan","Orhan","Sinan","Furkan","Ahmet","Ali"};
-        List<String> list = new ArrayList<>();
+        List<String> list = new ArrayList<>(10);
         list.addAll(List.of(names));
         String temp = list.get(7);
-        System.out.println(temp);
         list.set(7,list.get(2));
         list.set(2,temp);
         System.out.print("[");

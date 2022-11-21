@@ -3,12 +3,11 @@ package eng_6_list;
 import java.util.*;
 
 public class C01_OccuringChar {
-
+    //  Write a Java program to get a String from user as input and
+    //  find the maximum occurring character in that string. (Ignore case sensitivity)
+    //  input :   Learning java is easy
+    //  output:   maximum occurring character is : a
     public static void main(String[] args) {
-        //  Write a Java program to get a String from user as input and
-        //  find the maximum occurring character in that string. (Ignore case sensitivity)
-        //  input :   Learning java is easy
-        //  output:   maximum occurring character is : a
         Scanner input = new Scanner(System.in);
         System.out.print("String: ");
         // String str = "Learning java is easy";
@@ -37,8 +36,9 @@ public class C01_OccuringChar {
         int maxRepeat= repeatedCount.get(repeatedCount.size()-1);
         for (int i = 0;i<repeatedList.size();i++){
             if (maxRepeat==repeatedCount.get(i)){
-                System.out.print("maximum occurring character is : " + repeatedList.get(i) + " ");
+                System.out.println("maximum occurring character is : " + repeatedList.get(i) + " ");
             }
         }
+        input.close();
     }
 }

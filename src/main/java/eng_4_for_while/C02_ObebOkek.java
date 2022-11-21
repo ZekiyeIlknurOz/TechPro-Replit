@@ -3,13 +3,12 @@ package eng_4_for_while;
 import java.util.Scanner;
 
 public class C02_ObebOkek {
-
+    //  Ask user to enter 2 integer then find GCD (Greatest Common Divisor) and LCM (Least Common Multiple)
+    //Input : 30 and 40
+    //  Expected OutPut:
+    //  GCD for 30 and 40 = 10
+    //  LCM for 30 and 40 = 120
     public static void main(String[] args) {
-        //  Ask user to enter 2 integer then find GCD (Greatest Common Divisor) and LCM (Least Common Multiple)
-        //Input : 30 and 40
-        //  Expected OutPut:
-        //  GCD for 30 and 40 = 10
-        //  LCM for 30 and 40 = 120
         Scanner input = new Scanner(System.in);
         System.out.print("Enter num1: ");
         int num1 = input.nextInt();
@@ -25,6 +24,6 @@ public class C02_ObebOkek {
         lcm = num1*num2/gcd;
         System.out.println("GCD for " + num1 + " and " + num2 + " = " + gcd);
         System.out.println("LCM for " + num1 + " and " + num2 + " = " + lcm);
-
+        input.close();
     }
 }

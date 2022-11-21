@@ -3,15 +3,14 @@ package eng_3_if_switch_ternary_stringmethod;
 import java.util.Scanner;
 
 public class C06 {
-
+    // Ask user to type a name, the length of name should be 3.
+    //Then check if the name has same characters.
+    //If the String has same characters Print “String has duplicate characters”
+    //Else Print “String has unique characters”
+    //Please use ternary.
+    //Input :ala
+    //OutPut:String has duplicate characters
     public static void main(String[] args) {
-        // Ask user to type a name, the length of name should be 3.
-        //Then check if the name has same characters.
-        //If the String has same characters Print “String has duplicate characters”
-        //Else Print “String has unique characters”
-        //Please use ternary.
-        //Input :ala
-        //OutPut:String has duplicate characters
         Scanner input = new Scanner(System.in);
         System.out.print("Name: ");
         String name = input.next().toLowerCase();
@@ -25,6 +24,6 @@ public class C06 {
         }
         String s = isThereSameChar ? "String has duplicate characters" : "String has unique characters";
         System.out.println(s);
-
+        input.close();
     }
 }

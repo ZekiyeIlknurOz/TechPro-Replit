@@ -3,16 +3,15 @@ package tr_3_if_wsitch_ternary_stringmethod;
 import java.util.Scanner;
 
 public class If_Switch_Ternary_2 {
-
+    //  Kullanıcıya Adı, Soyadı ve kredi kartı numaralarını sorarak
+    //  verilen formata ceviren java kodunu yaziniz.
+    //Input :
+    //John White
+    //1234234534561478
+    //Output : Name : J*** W****
+    //CCN  : **** **** **** 1478
+    //* Ilk Harfler Buyuk harf ile baslamalidir.
     public static void main(String[] args) {
-        //  Kullanıcıya Adı, Soyadı ve kredi kartı numaralarını sorarak
-        //  verilen formata ceviren java kodunu yaziniz.
-        //Input :
-        //John White
-        //1234234534561478
-        //Output : Name : J*** W****
-        //CCN  : **** **** **** 1478
-        //* Ilk Harfler Buyuk harf ile baslamalidir.
         Scanner input = new Scanner(System.in);
         System.out.print("Isim ve soyisim: ");
         String nameSurname = input.nextLine().trim();

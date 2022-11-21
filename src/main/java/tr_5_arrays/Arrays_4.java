@@ -19,6 +19,7 @@ public class Arrays_4 {
         for (int i = 0; i < arr.length; i++) {
             Arrays.fill(arr[i], "0 ");
         }
+        System.out.println(Arrays.deepToString(arr));
         for (String[] w : arr) {
             for (String t : w){
                 System.out.print(t);

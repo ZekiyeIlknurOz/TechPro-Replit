@@ -1,10 +1,9 @@
 package eng_5_method_arrays;
 
 public class C01_ReverseNumber_Method {
-
+    // Write a return method to reverse number.
+    // Input  : 12345        Output : 54321
     public static void main(String[] args) {
-        // Write a return method to reverse number.
-        // Input  : 12345        Output : 54321
         int number = 123456789;
         int reverseNumber = reverse(number);
         System.out.println(reverseNumber);

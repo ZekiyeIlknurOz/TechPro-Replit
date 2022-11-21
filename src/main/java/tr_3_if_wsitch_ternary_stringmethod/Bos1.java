@@ -20,14 +20,12 @@ public class Bos1 {
 
         if (boslukIndex == -1) {
             System.out.println("Ad veya soyadi eksik ");}
-
         if (ilkHarfIsimKüc || ilkHarfSoyIsimKüc) {
             System.out.println("BAŞ HARFLERDE HATA VAR"); }
         if (format) {
             System.out.println("FORMAT HATASI"); }
         if (bos) {
-            System.out.println("İSİM GİRİLMEDİ");
-        }
+            System.out.println("İSİM GİRİLMEDİ");}
         if (!harfVeBos) {
             System.out.println("geçersiz isim");  }
     }

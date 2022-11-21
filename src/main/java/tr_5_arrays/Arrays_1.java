@@ -5,7 +5,7 @@ import java.util.Arrays;
 public class Arrays_1 {
 
     public static void main(String[] args) {
-        //  Karışık verilen sayıları  ve kelimeleri  sıralayan   Java kodunun yazınız.
+        //  Karışık verilen sayıları  ve kelimeleri  sıralayan Java kodunun yazınız.
         //not: Test datadaki değerleri kullanınız.
         //Test Data:
         //[1232, 1134,2345,1022]

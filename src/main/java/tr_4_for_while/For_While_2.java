@@ -18,9 +18,9 @@ public class For_While_2 {
         int sayi1 = input.nextInt();
         System.out.print("2. tamsayi: ");
         int sayi2 = input.nextInt();
+        int max = Math.max(sayi1,sayi2);
         int gcd = 1, lcm, i= 2;
-
-        while(i<=sayi1){
+        while(i<=max){
             if(sayi1%i==0 && sayi2%i==0){
                 gcd=i;
             }

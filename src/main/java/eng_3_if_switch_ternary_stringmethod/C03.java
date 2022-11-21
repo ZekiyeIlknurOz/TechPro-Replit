@@ -1,9 +1,18 @@
 package eng_3_if_switch_ternary_stringmethod;
-import java.util.Scanner;
-public class C03 {
 
-    static byte digitNumber = 0;
+import java.util.Scanner;
+
+public class C03 {
+    /*  Write a Java program to compute and print sum of two given numbers (more than or equal to zero).
+    Ithe sum have more thf given integers or an 10 digits, print "overflow".
+    EXAMPLE:
+    INPUT      :  Input two integers:
+    25
+    46
+    OUTPUT :    Sum of the numbers: 71              */
+
     public static byte findDigitNumber(long x) {
+        byte digitNumber = 0;
         while (x != 0) {
             x /= 10;
             digitNumber++;
@@ -12,7 +21,6 @@ public class C03 {
     }
 
     public static void main(String[] args) {
-        // 3
         Scanner input = new Scanner(System.in);
         System.out.print("First Number : ");
         long num1 = input.nextLong();
